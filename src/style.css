@@ -1,0 +1,373 @@
+body{
+}
+
+h1{
+  top: 100px;
+  position: relative;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  z-index: 1;
+  font-size: 60px;
+  font-family: fantasy;
+  font-weight: 500;
+  color: #b71c1c;
+  text-shadow: 1px 2px 2px #ffebee;
+}
+/* Mypagebackground */
+.demo {
+    position:relative;
+    width:100%;
+    height:300px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px
+}
+
+.demo figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+    margin-left:-50px
+}
+.demo figure img {
+    display:block;
+    position:relative;
+    width: 100%;
+    height: 300px;
+    z-index:10;
+    margin:-15px 0
+}
+.demo figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+.demo figure h2 {
+    font-family:'Lato';
+    color:#fff;
+    font-size:18px;
+    margin-left: 18px;
+}
+.demo figure h6 {
+    display:block;
+    font-family:'Lato';
+    font-size:13px;
+    line-height:18px;
+    margin:0;
+    margin-left: 18px;
+    color:#fff;
+}
+.demo figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    background-color:rgba(26,76,110,0.5);
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.demo figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.demo figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.demo figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+/* UploadFile */
+.uploadfile_header{
+  position: absolute;
+  top: 35%;
+  width: 15%;
+  height: 300px;
+}
+
+.uploadfile_box{
+  position: relative;
+  width: 100%;
+  display: block;
+  top: 30px;
+  height: 90px;
+  text-align: center;
+  float: left;
+}
+
+.uploadfile_box_upload{
+  display: inline-block;
+  width: 0px;
+  opacity: 0;
+}
+
+.uploadfile_box_music{
+  height: 60PX;
+  width: 60px;
+  background-image: url("https://image.flaticon.com/icons/svg/254/254057.svg");
+  background-size: cover;
+  /* make text transparent */
+  color: transparent;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.uploadfile_box_document{
+  height: 60PX;
+  width: 60px;
+  background-image: url("https://image.flaticon.com/icons/svg/167/167756.svg");
+  background-size: cover;
+  /* make text transparent */
+  color: transparent;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.uploadfile_box_picture{
+  height: 60PX;
+  width: 60px;
+  background-image: url("https://image.flaticon.com/icons/svg/214/214333.svg");
+  background-size: cover;
+  /* make text transparent */
+  color: transparent;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.uploadfile_submit{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.uploadfile_submit button{
+  border-radius: 30px;
+  background-color: white;
+}
+
+/* MyRoom */
+.myroom_box{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.myroom_background{
+  left: 15%;
+  width: 85%;
+  height: 100%;
+  position: absolute;
+  background-size:cover;
+  display: block;
+  z-index: 2;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Savebtn */
+.savebtn button{
+  user-select: none;
+  z-index: 6;
+  font-size: 40px;
+  color: white;
+  background-color: #c62828;
+  border-radius: 25px;
+  position: absolute;
+  top: 85%;
+  left: 85%;
+  font-weight: 500;
+  text-shadow: 2px 3px 3px #880e4f;
+  border: 2px solid #ef9a9a;
+  font-family: unset;
+}
+
+.getbtn button{
+  user-select: none;
+  z-index: 6;
+  font-size: 40px;
+  color: white;
+  background-color: #c62828;
+  border-radius: 25px;
+  position: absolute;
+  top: 75%;
+  left: 85%;
+  font-weight: 500;
+  text-shadow: 2px 3px 3px #880e4f;
+  border: 2px solid #ef9a9a;
+  font-family: unset;
+}
+/* Mypagebackground */
+.chooseroom_box{
+  left: 15%;
+  width: 85%;
+  height: 100%;
+  position: absolute;
+  background-image: url("http://allswalls.com/images/empty-dining-room-wallpaper-1.jpg");
+  background-size: cover;
+  display: block;
+}
+
+.chooseroom_box p{
+  left: 30%;
+  font-size: 80px;
+  font-family: fantasy;
+  color: white;
+  font-weight: 400;
+  text-shadow: 3px 4px 8px #5c6bc0;
+}
+
+.chooseroom_img{
+  margin-left: 30px;
+}
+
+.chooseroom_img img{
+  width: 330px;
+  height: 300px;
+  margin-right: 30px;
+}
+
+/* Header */
+box{
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    background-color: #212121;
+}
+
+.box_logo{
+    margin-top: 70px;
+    display: block;
+    height:150px;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.box_semilogo{
+    position: relative;
+    top: 30px;
+    font-size:20px;
+    font-weight: 400;
+    height: 50px;
+}
+
+li a{
+  font-size: 23px;
+  color: white;
+}
+
+.box_layout_whenlogin {
+  position:relative;
+  display: block;
+  height: 60px;
+  text-align: center;
+}
+
+.box_layout{
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  display:block;
+  height: 100px;
+  text-align: center;
+}
+
+.box_layout li,
+.box_layout_whenlogin li{
+    border: 1px solid #343a40;
+}
+
+.box_layout li:hover,
+.box_layout_whenlogin li:hover{
+    background-color: #868e96;
+}
+
+.box_layout li:active,
+.box_layout_whenlogin li:active{
+    background-color: #343a40;
+}
+
+.box_layout a:active,
+.box_layout_whenlogin a:active{
+    color: black;
+}
+
+/* App.js(container) */
+
+h10{
+  left: 15%;
+  position: absolute;
+  background-image: url("https://pre00.deviantart.net/40ac/th/pre/f/2013/359/a/c/empty_rooms_background_by_bubupoodle-d6zb5lx.png");
+  background-size: cover;
+  display: block;
+  width: 85%;
+  height: 100%;
+}
+
+p{
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  top: 15%;
+  color: white;
+  font-weight: 400;
+  font-family: fantasy;
+  text-shadow: 1px 2px 2px #00838f ;
+  font-size: 80px;
+}
+
+/* Authentication */
+.auth_box{
+  top: 300px;
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.auth_box_header {
+  height: 50px;
+  background-color: #263238;
+  color: white;
+  font-size:30px;
+  font-weight: 400;
+  text-shadow: 1px 2px 2px #e0e0e0;
+  border-radius: 3px;
+}
+
+.auth_box_content{
+  margin: auto;
+  width: 90%;
+  height: 180px;
+}
+
+.auth_box_footer h3{
+  display: inline-block;
+  font-size: 20px;
+  color: #eceff1;
+  text-shadow: 1px 2px 2px #263238;
+}
